@@ -7,7 +7,7 @@ function emply() {
       insertdata(transferdat);
     } 
     else {
-      update()
+      update(transferdat)
       selectedtr = null
     }
     reset()
@@ -60,11 +60,11 @@ function edit(y) {
 
 }
 
-function update() {
-  selectedtr.cells[1].innerHTML = document.querySelector('.name').value;
-  selectedtr.cells[2].innerHTML = document.querySelector('.price').value;
-  selectedtr.cells[3].innerHTML = document.querySelector('.detail').value;
-  selectedtr.cells[4].innerHTML = document.querySelector('.color').value;
+function update(z) {
+  selectedtr.cells[1].innerHTML = z.name;
+  selectedtr.cells[2].innerHTML = z.price;
+  selectedtr.cells[3].innerHTML = z.deital;
+  selectedtr.cells[4].innerHTML = z.color;
 }
 
 function dlt(dl) {
