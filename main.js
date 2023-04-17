@@ -8,6 +8,7 @@ function emply() {
     } 
     else {
       update()
+      selectedtr = null
     }
     reset()
     
@@ -50,7 +51,7 @@ function reset() {
 }
 
 function edit(y) {
-  selectedtr = y.parentElement.parentElement;
+  var selectedtr = y.parentElement.parentElement;
   // console.log(selectedtr);
   document.querySelector('.name').value = selectedtr.cells[1].innerHTML;
   document.querySelector('.price').value = selectedtr.cells[2].innerHTML;
