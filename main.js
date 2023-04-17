@@ -63,7 +63,7 @@ function edit(y) {
 function update(z) {
   selectedtr.cells[1].innerHTML = z.name;
   selectedtr.cells[2].innerHTML = z.price;
-  selectedtr.cells[3].innerHTML = z.deital;
+  selectedtr.cells[3].innerHTML = z.detail;
   selectedtr.cells[4].innerHTML = z.color;
 }
 
