@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+  <h1>CRUD</h1>
+     <div class="employpage"> 
+  <div class="formdata">
+    
+  <form onsubmit="event.preventDefault();" autocomplete="off">
+      
+
+      <label>Name</label>
+      <input type="text" class="name" value=""  placeholder="Employ Name">
+
+      <label>Price</label>
+      <input type="number" class="price" value=""  placeholder="Employ Price">
+
+      <label>Detail</label>
+      <input type="text" class="detail" value=""  placeholder="Employ Detail">
+
+      <label>Color</label>
+      <input type="text" class="color" value="" placeholder="Employ Color">
+
+      <div style="width:100%">
+      <input type="submit"  value="Submit"  class="button">
+      
+      </div>
+    </form>
+
+  </div>
+
+  <div class="display_table">
+              <table class="list" id="employeeList">
+                    <thead>
+                         <tr>
+                      <th>ID</th>         
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>Detail</th>
+                      <th>Color</th>                      
+                      <th>Action</th>
+                  </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html> 
+
