@@ -51,7 +51,7 @@ function reset() {
 }
 
 function edit(y) {
-  var selectedtr = y.parentElement.parentElement;
+  selectedtr = y.parentElement.parentElement;
   // console.log(selectedtr);
   document.querySelector('.name').value = selectedtr.cells[1].innerHTML;
   document.querySelector('.price').value = selectedtr.cells[2].innerHTML;
